@@ -1,16 +1,8 @@
 <?php
 
-function minhaOrdenacao(array $array1, array $arrey2)
+function minhaOrdenacao(array $array1, array $array2)
 {
-    if($array1['nota'] > $arrey2['nota']){
-        return -1;
-    };
-
-    if($arrey2['nota'] > $array1['nota'] ){
-        return 1;
-    };
-
-    return 0;
+    return $array2['nota'] <=> $array1['nota'];
 }
 
 
