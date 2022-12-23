@@ -14,3 +14,7 @@ var_dump(array_key_exists('Paulo', $notas));
 var_dump(array_key_exists('Paula', $notas));
 var_dump(isset($notas['Fabio']));
 var_dump(isset($notas['Paulo']));
+
+echo '******* Verificando se valor existe *******'.PHP_EOL;
+echo 'Alguém tirou 10?'.PHP_EOL;
+var_dump(in_array(10, $notas));
