@@ -1,6 +1,6 @@
 <?php
 $notas = [
-    'Ana' => 8, 'Paulo' => 10, 'Carla' => 6, 'Fabio' => null
+    'Ana' => 8, 'Paulo' => 10, 'Carla' => '6', 'Fabio' => null
 ];
 
 echo '**********Verificando se é array **********'.PHP_EOL;
@@ -18,3 +18,10 @@ var_dump(isset($notas['Paulo']));
 echo '******* Verificando se valor existe *******'.PHP_EOL;
 echo 'Alguém tirou 10?'.PHP_EOL;
 var_dump(in_array(10, $notas));
+//Converte usando o operador ==
+var_dump(in_array(6, $notas));
+
+echo 'Quem tirou 10?'.PHP_EOL;
+var_dump(array_search(10, $notas));
+var_dump(array_search(6, $notas));
+var_dump(array_search(2, $notas));
