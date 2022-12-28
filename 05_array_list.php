@@ -16,3 +16,24 @@ $aluno2 = [
 ['nome' => $nome2, 'nota' => $nota2,  'idade' => $idade2] = $aluno2;
 
 var_dump($nome2, $nota2, $idade2);
+
+echo "*****Extra*****".PHP_EOL;
+
+$contas = [
+    [
+        'titular' => 'Vinicius Dias',
+        'saldo' => 100
+    ],
+    [
+        'titular' => 'Maria Joaquina',
+        'saldo' => 1000
+    ],
+    [
+        'titular' => 'João da Silva',
+        'saldo' => 800
+    ],
+];
+
+foreach ($contas as ['titular' => $titular, 'saldo' => $saldo]) {
+    echo "{$titular} possui {$saldo} reais" . PHP_EOL;
+}
